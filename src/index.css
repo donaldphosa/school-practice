@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+
+.App{
+    height: 85vh;
+    width: 100%;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.items{
+    background-color: #fff;
+    border: 1px solid gray;
+    width: 45%;
+    height: 90%;
+    overflow: auto;
+    padding: 10px;
+    border-color: #c5c5c5;
+    position: relative;
+}
+.item{
+    display: flex;
+    height: 72px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid gray;
+    padding: 5px;
+    margin-bottom: 25px;
+}
+img{
+    width: 70px;
+    height: 100%;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+}
+.item-details{
+    width: 210px;
+    margin: 0 20px;
+}
+button{
+    padding: 10px 30px;
+    background-color: rgb(24, 23, 23);
+    color: #fff;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    padding: 50px;
+}
+h6{
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    position: sticky;
+    top: -10px;
+    z-index: 11;
+    width: 100%;
+    background-color: #fff;
+    
+}
+
+.items::-webkit-scrollbar {
+    width: 5px;              
+  }
+  body::-webkit-scrollbar-track {
+    background: rgb(179, 176, 176);       
+  }
+.items::-webkit-scrollbar-thumb {
+    background-color: gray;  
+    border-radius: 20px;       
+    border: 3px ; 
+  }
+
+.item-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+    background-color: #fff;
+    border: 0.5px solid gray;
+    height: 70%;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    color: #4b4949;
+}
+.item-desc img{
+    width: 25%;
+    height: 30%;
+
+}
+.item-desc h2{
+  
+    padding: 5px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buy{
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 26px;
+}
