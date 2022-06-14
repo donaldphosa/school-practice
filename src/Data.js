@@ -3,7 +3,8 @@ export default [
         id: 1,
         name: 'camera',
         picture: './images/camera.jfif',
-        price: 1000
+        price: 1000,
+        
     },
     {
         id: 2,

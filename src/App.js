@@ -1,14 +1,14 @@
 
 import React, { useState }  from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ItemDesc from "./ItemDesc";
+import ItemDesc from "./pages/ItemDesc";
 import Data from "./Data";
-import Home from "./home";
+import Home from "./pages/home";
 
 function App() {
   const [items, setItems] = useState(Data)
   const [totalPrice, setTotalPrice] = useState(0)
-  
+
 
 
   return (
@@ -21,7 +21,7 @@ function App() {
       <Route path="/itemdesc/:id" element={<ItemDesc/>}/>
     </Routes>
     </div>
-    <h3>{`Price: R ${totalPrice.toFixed(2)}`}</h3>
+    <h3 className='totalPrice'>{`Total Price: R ${totalPrice.toFixed(2)}`}</h3>
     </div>
     </BrowserRouter>
   );
